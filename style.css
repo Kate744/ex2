@@ -20,13 +20,14 @@ font-size: 18px;
   padding: 15px 15px;
 }
 
-.navbar-right li {
-  padding-right: 50px;
+.navbar-right li a{
+  padding-right: 3px;
+  padding-top: 13px;
 }
 
 .navbar-logo {
   padding-right: 60px;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .navbar-logo img {
@@ -42,4 +43,38 @@ font-size: 18px;
 
 .navbar-nav .active-link {
   text-transform: uppercase;
+}
+
+
+.glyphicon-contact {
+  font-size: 24px;
+  line-height: 75px;
+  position: absolute;
+  color: #000000;
+  right: 165px;
+  top: 5px;
+  display: none;
+}
+
+@media only screen and (max-width: 1198px) {
+
+  .navbar-right {
+    display: none;
+    position: absolute;
+    right: 175px;
+    top: 55px;
+  }
+
+.glyphicon-contact {
+  display: block;
+  cursor: pointer;
+}
+
+.navbar-right li {
+  float: none;
+  padding: 0;
+}
+.navbar-right li a {
+  padding-bottom: 5px;
+}
 }
