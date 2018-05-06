@@ -35,8 +35,7 @@ font-size: 18px;
   top: 25px;
 }
 
-.nav-left li:hover,
-.navbar-right li:hover {
+.nav-left li:hover {
   text-transform: uppercase;
   color: #32CD32;
 }
@@ -56,25 +55,127 @@ font-size: 18px;
   display: none;
 }
 
-@media only screen and (max-width: 1198px) {
+@media only screen and (max-width: 1200px) {
 
-  .navbar-right {
+/*  .navbar-right {
     display: none;
     position: absolute;
-    right: 175px;
+    right: 80px;
     top: 55px;
   }
 
 .glyphicon-contact {
   display: block;
   cursor: pointer;
+  right: 70px;
 }
 
 .navbar-right li {
   float: none;
   padding: 0;
 }
+*/
+.container-first {
+  margin-left: 0;
+  margin-right: 0;
+}
+}
+
+@media only screen and (max-width: 870px) {
+  .navbar-right {
+    display: none;
+    position: absolute;
+    right: 83px;
+    top: 55px;
+  }
+
+  .glyphicon-contact {
+  display: block;
+  cursor: pointer;
+  right: 70px;
+  }
+
 .navbar-right li a {
-  padding-bottom: 5px;
+  padding: 0;
+}
+  .navbar-right li {
+  float: none;
+  padding-top: 5px;
+  }
+  .navbar-right {
+
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .nav-left {
+    padding-right: 30px;
+  }
+  .navbar-right {
+    padding-left: 5px;
+  }
+  .navbar-right li  {
+    padding: 0;
+    padding-top: 15px;
+  }
+  .container-first {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 993px) {
+  .container-first {
+    margin-right: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  .glyphicon-contact {
+  padding-right: 0;
+  margin-right: 0;
+  }
+  .navbar-right {
+    padding-right: 0;
+  }
+
+  .navbar-right li {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+  }
+
+  .navbar-logo {
+    padding-right: 10px;
+  }
+  .nav-left {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 0;
+  }
+  .navbar-collapse {
+    padding-right: 0;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 831px) {
+  .nav-left {
+    font-size: 14px;
+  }
+
+}
+@media only screen and (max-width: 767px) {
+  .navbar-logo {
+    position: relative;
+    top: -15px;
+  }
+  .glyphicon-contact {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 872px) {
+.navbar-right {
+  display: block !important;
 }
 }
